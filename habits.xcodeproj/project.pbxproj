@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A453A78B24876C1200CB3CDA /* DetailedHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A453A78A24876C1200CB3CDA /* DetailedHabitView.swift */; };
+		A453A78D24876C7B00CB3CDA /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A453A78C24876C7B00CB3CDA /* Bundle-Decodable.swift */; };
 		A45BBE80248732DC0096B003 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45BBE7F248732DC0096B003 /* AppDelegate.swift */; };
 		A45BBE82248732DC0096B003 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45BBE81248732DC0096B003 /* SceneDelegate.swift */; };
 		A45BBE84248732DC0096B003 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45BBE83248732DC0096B003 /* ContentView.swift */; };
 		A45BBE86248732DD0096B003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A45BBE85248732DD0096B003 /* Assets.xcassets */; };
 		A45BBE89248732DD0096B003 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A45BBE88248732DD0096B003 /* Preview Assets.xcassets */; };
 		A45BBE8C248732DD0096B003 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A45BBE8A248732DD0096B003 /* LaunchScreen.storyboard */; };
+		A45BBE942487353F0096B003 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45BBE932487353F0096B003 /* Habit.swift */; };
+		A45BBE9624873B110096B003 /* AddHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45BBE9524873B110096B003 /* AddHabitView.swift */; };
+		A45BBE9A24873F370096B003 /* Habits.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45BBE9924873F370096B003 /* Habits.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A453A78A24876C1200CB3CDA /* DetailedHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedHabitView.swift; sourceTree = "<group>"; };
+		A453A78C24876C7B00CB3CDA /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		A45BBE7C248732DC0096B003 /* habits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = habits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A45BBE7F248732DC0096B003 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A45BBE81248732DC0096B003 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,9 @@
 		A45BBE88248732DD0096B003 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A45BBE8B248732DD0096B003 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A45BBE8D248732DD0096B003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A45BBE932487353F0096B003 /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
+		A45BBE9524873B110096B003 /* AddHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitView.swift; sourceTree = "<group>"; };
+		A45BBE9924873F370096B003 /* Habits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habits.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +69,12 @@
 				A45BBE7F248732DC0096B003 /* AppDelegate.swift */,
 				A45BBE81248732DC0096B003 /* SceneDelegate.swift */,
 				A45BBE83248732DC0096B003 /* ContentView.swift */,
+				A453A78C24876C7B00CB3CDA /* Bundle-Decodable.swift */,
+				A453A78A24876C1200CB3CDA /* DetailedHabitView.swift */,
+				A45BBE932487353F0096B003 /* Habit.swift */,
 				A45BBE85248732DD0096B003 /* Assets.xcassets */,
+				A45BBE9524873B110096B003 /* AddHabitView.swift */,
+				A45BBE9924873F370096B003 /* Habits.swift */,
 				A45BBE8A248732DD0096B003 /* LaunchScreen.storyboard */,
 				A45BBE8D248732DD0096B003 /* Info.plist */,
 				A45BBE87248732DD0096B003 /* Preview Content */,
@@ -148,7 +163,12 @@
 			files = (
 				A45BBE80248732DC0096B003 /* AppDelegate.swift in Sources */,
 				A45BBE82248732DC0096B003 /* SceneDelegate.swift in Sources */,
+				A453A78B24876C1200CB3CDA /* DetailedHabitView.swift in Sources */,
+				A453A78D24876C7B00CB3CDA /* Bundle-Decodable.swift in Sources */,
+				A45BBE9A24873F370096B003 /* Habits.swift in Sources */,
+				A45BBE942487353F0096B003 /* Habit.swift in Sources */,
 				A45BBE84248732DC0096B003 /* ContentView.swift in Sources */,
+				A45BBE9624873B110096B003 /* AddHabitView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
