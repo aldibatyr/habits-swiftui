@@ -25,7 +25,7 @@ struct DetailedHabitView: View {
                     Stepper("\(timeAmount, specifier: "%.2f") hours", value: $timeAmount, step: 0.25)
                 }
                 Button("Save") {
-                    habit.updateTimeSpent(additionalAmount: timeAmount)
+//                    habit.updateTimeSpent(additionalAmount: timeAmount)
                 }
                 Spacer()
             }
