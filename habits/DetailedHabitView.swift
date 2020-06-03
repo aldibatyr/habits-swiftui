@@ -11,23 +11,23 @@ import SwiftUI
 struct DetailedHabitView: View {
     @Environment(\.presentationMode) var presentationMode
     @State private var timeAmount = 0.0
-    var habit: Habit
+    let habit: Habit
     var body: some View {
-            VStack {
+        VStack() {
                 Text(habit.name)
                     .font(.largeTitle)
                     .fontWeight(.bold)
+                    .padding()
                 Text(habit.description)
+                    .padding()
+            HStack {
+                Text("\(habit.timesFinished) times completed")
                 Spacer()
-                HStack {
-                    Text("Spent more time?")
-                        .padding(.trailing)
-                    Stepper("\(timeAmount, specifier: "%.2f") hours", value: $timeAmount, step: 0.25)
-                }
-                Button("Save") {
-//                    habit.updateTimeSpent(additionalAmount: timeAmount)
-                }
-                Spacer()
+                Button("Complete") {
+                    self.presentationMode.wrappedValue.dismiss()
+                  }
+            }
+  
             }
             .padding()
             .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -35,7 +35,7 @@ struct DetailedHabitView: View {
 }
 
 struct DetailedHabitView_Previews: PreviewProvider {
-    static var habit = Habit(name: "test", description: "test", timeSpent: 0.25)
+    static var habit = Habit(name: "test", description: "test")
     static var previews: some View {
         DetailedHabitView(habit: habit)
     }

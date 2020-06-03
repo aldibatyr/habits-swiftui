@@ -20,7 +20,7 @@ struct ContentView: View {
                             Text(habit.name)
                                 .font(.headline)
                             Spacer()
-                            Text("\(habit.timeSpent, specifier: "%.2f") hours")
+                            Text("\(habit.timesFinished) times completed")
                         }
                     }
                 }

@@ -13,7 +13,6 @@ struct AddHabitView: View {
     @ObservedObject var habits: Habits
     @State private var name = ""
     @State private var description = ""
-    @State private var timeSpent = 0.0
     
     @State private var errorTitle = ""
     @State private var errorMessage = ""
@@ -24,7 +23,6 @@ struct AddHabitView: View {
             Form {
                 TextField("Name", text: $name)
                 TextField("Description", text: $description)
-                Stepper("Time Spent: \(timeSpent, specifier: "%.2f")", value: $timeSpent, in: 0...10, step: 0.25)
             }
             .navigationBarTitle("Add new habit")
             .navigationBarItems(trailing: Button(action: {
@@ -40,7 +38,7 @@ struct AddHabitView: View {
     
     func addHabit() {
         if (name != "" && description != "") {
-            let newHabit = Habit(name: self.name, description: self.description, timeSpent: self.timeSpent)
+            let newHabit = Habit(name: self.name, description: self.description)
             self.habits.content.append(newHabit)
             self.presentationMode.wrappedValue.dismiss()
         } else {
